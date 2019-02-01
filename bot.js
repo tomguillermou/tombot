@@ -134,7 +134,12 @@ client.on('message', (message) => {
         
         } else if (command === 'help') {
 
-            message.reply(' here is a list of all the commands:');
+            message.reply(`\n:gear: Commands :gear\n\n`
+                        + `:clipboard: **!join** : allows you to join the casino\n`
+                        + `:game_die: **!bet [number_of_gems]** : bet the specified amount of ${currency.name}\n`
+                        + `:moneybag: **!balance** : display your account balance\n`
+                        + `:gift: **!refund** : gives you 100${currency.emote} if you have no ${currency.name} left\n`
+                        + `:trophy: **!top** : display the top 3 players of the server\n`);
 
         } else {
 
