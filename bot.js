@@ -130,16 +130,16 @@ client.on('message', (message) => {
 
         } else if (command === 'top') {
 
-            message.reply(`\n:trophy: Top 3 :trophy:\n\n:first_place: First: -\n:second_place: Second: -\n:third_place: Third: -`);
+            message.reply(`\n:trophy: **Top 3** :trophy:\n\n:first_place: First: -\n:second_place: Second: -\n:third_place: Third: -`);
         
         } else if (command === 'help') {
 
-            message.reply(`\n:gear: Commands :gear\n\n`
-                        + `:clipboard: **!join** : allows you to join the casino\n`
-                        + `:game_die: **!bet [number_of_gems]** : bet the specified amount of ${currency.name}\n`
-                        + `:moneybag: **!balance** : display your account balance\n`
-                        + `:gift: **!refund** : gives you 100${currency.emote} if you have no ${currency.name} left\n`
-                        + `:trophy: **!top** : display the top 3 players of the server\n`);
+            message.reply(`\n:gear: **Commands** :gear:\n\n`
+                        + `:clipboard: **!join** : allows you to join the casino\n\n`
+                        + `:game_die: **!bet [number_of_gems]** : bet the specified amount of ${currency.name}\n\n`
+                        + `:moneybag: **!balance** : display your account balance\n\n`
+                        + `:gift: **!refund** : gives you **100**${currency.emote} if you have no ${currency.name} left\n\n`
+                        + `:trophy: **!top** : display the top 3 players of the server\n\n`);
 
         } else {
 
