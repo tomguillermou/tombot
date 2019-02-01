@@ -143,7 +143,7 @@ client.on('message', (message) => {
 
         } else {
 
-            message.reply(' unknown command !');
+            message.reply(' unknown command !\n\nType **!help** to show the list of available commands :scroll:');
         }
     }
 });
