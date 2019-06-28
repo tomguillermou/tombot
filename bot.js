@@ -8,6 +8,7 @@ const client = new Discord.Client();
 let players;
 
 function selectActiveUser(authorId) {
+
     for (const user of players) {
         if (authorId === user.user_id) {
             return user;
@@ -17,9 +18,9 @@ function selectActiveUser(authorId) {
 
 function loadPlayersData() {
     fs.readFile('./players.txt', (err, data) => {
-
-        if (err) throw err;
-    
+        if (err) { 
+            throw err
+        };
         players = JSON.parse(data);
     });
 
