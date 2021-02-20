@@ -1,0 +1,26 @@
+{
+    "lang": "fr",
+    "prefix": "!",
+    "currency": {
+        "emote": ":coin:"
+    },
+    "colors": {
+        "orange": "0xffa500"
+    },
+    "cuts": {
+        "booster": "0.2",
+        "advertiser": "0.15",
+        "staff": "0.05"
+    },
+    "emotes": {
+        "validate": "✅",
+        "reject": "⛔"
+    },
+    "roles": {
+        "staff": "Staff",
+        "advertiser": "Advertiser",
+        "booster": "Booster"
+    },
+    "lineSeparator": "\n",
+    "validateApplyRoles": ["Admin"]
+}
